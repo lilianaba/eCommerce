@@ -1,12 +1,12 @@
 # E-Commerce Back End (13 Object-Relational Mapping [ORM])
 
 # Video
-[Video](https://drive.google.com/file/d/1QvCqSVZQ5FDRKo4QugZW4yCA2_0U_-Qh/preview)
+[Online Video](https://drive.google.com/file/d/1QvCqSVZQ5FDRKo4QugZW4yCA2_0U_-Qh/preview)
 ## The Task
 
 Internet retail, also known as **e-commerce**, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to their prevalence, understanding the fundamental architecture of these platforms will benefit you as a full-stack web developer.
 
-Your task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.
+The task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.
 
 ## User Story
 
@@ -46,117 +46,35 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 ![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
 
-## Getting Started
 
-This Challenge will require a video submission. Refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
 
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
 
-Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
+## Credits
 
-### Database Models
+[Liliana Bazand](https://github.com/lilianaba)
 
-Your database should contain the following four models, including the requirements listed for each model:
+----
+## Questions ❔
+Contact me: lilianabazand@yahoo.com
 
-* `Category`
 
-  * `id`
-
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
-
-  * `category_name`
-  
-    * String.
-  
-    * Doesn't allow null values.
-
-* `Product`
-
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
-
-  * `product_name`
-  
-    * String.
-  
-    * Doesn't allow null values.
-
-  * `price`
-  
-    * Decimal.
-  
-    * Doesn't allow null values.
-  
-    * Validates that the value is a decimal.
-
-  * `stock`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set a default value of `10`.
-  
-    * Validates that the value is numeric.
-
-  * `category_id`
-  
-    * Integer.
-  
-    * References the `Category` model's `id`.
-
-* `Tag`
-
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
-
-  * `tag_name`
-  
-    * String.
-
-* `ProductTag`
-
-  * `id`
-
-    * Integer.
-
-    * Doesn't allow null values.
-
-    * Set as primary key.
-
-    * Uses auto increment.
-
-  * `product_id`
-
-    * Integer.
-
-    * References the `Product` model's `id`.
-
-  * `tag_id`
-
-    * Integer.
-
-    * References the `Tag` model's `id`.
-
+----
+# License
+MIT License 
+Copyright (c) [2022] [Liliana Bazand]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the 'Software'), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
